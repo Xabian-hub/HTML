@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en HTML</title>
+    <style>
+        .imagen-contenedor {
+            margin-bottom: 20px;
+        }
+        .imagen-contenedor img {
+            max-width: 100%;
+            height: auto;
+        }
+        .imagen-titulo {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Imágenes en HTML</h1>
+
+    <!-- Imagen desde URL externa -->
+    <div class="imagen-contenedor">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRORo7wQjnixUcUE2UeH4wnlWHfgpFDMhptg&s" alt="Imagen externa">
+        <div class="imagen-titulo">Imagen desde URL externa</div>
+    </div>
+
+    <!-- Imagen cargada desde carpeta local -->
+    <div class="imagen-contenedor">
+        <img src="gatotonto.jpg" alt="Imagen local">
+        <div class="imagen-titulo">Imagen alojada localmente</div>
+    </div>
+
+    <!-- Explicación de la diferencia entre imágenes -->
+    <h2>Diferencia entre imágenes externas y alojadas localmente</h2>
+    <p>Las imágenes <strong>desde una URL externa</strong> son cargadas desde servidores de terceros. Estas imágenes pueden estar fuera de nuestro control, lo que significa que si el servidor externo deja de funcionar o elimina la imagen, esta ya no aparecerá en nuestra página.</p>
+    <p>Por otro lado, las imágenes <strong>alojadas localmente</strong> están guardadas dentro del repositorio o servidor de nuestra propia página web. Esto nos da más control sobre la disponibilidad y la velocidad de carga, ya que no dependemos de recursos externos.</p>
+
+</body>
+</html>
